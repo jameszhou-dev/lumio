@@ -7,6 +7,8 @@ export function createApp() {
 
   app.use(express.json());
 
+  app.get("/", (_req, res) => res.redirect("/api/health"));
+
   app.use("/api", apiRouter);
 
   app.use(errorHandler);

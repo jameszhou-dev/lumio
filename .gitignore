@@ -44,3 +44,6 @@ yarn-error.*
 backend/.env
 backend/dist/
 backend/src/generated/
+
+# frontend
+frontend/dist/

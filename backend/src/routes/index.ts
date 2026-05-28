@@ -1,5 +1,6 @@
 import { Router, Request, Response } from "express";
 import businessesRouter from "./businesses";
+import callsRouter from "./calls";
 
 const router = Router();
 
@@ -8,5 +9,6 @@ router.get("/health", (_req: Request, res: Response) => {
 });
 
 router.use("/businesses", businessesRouter);
+router.use("/calls", callsRouter);
 
 export default router;
